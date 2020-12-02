@@ -26,8 +26,8 @@ function getEmailAndGenerate() {
   let mailEncoded = sub.encode(mailAddress);
 
   //Remove duplicate characters
-  function removeDuplicateCharacters(string) {
-    return string
+  function removeDuplicateCharacters(str) {
+    return str
       .split("")
       .filter(function (item, pos, self) {
         return self.indexOf(item) == pos;
