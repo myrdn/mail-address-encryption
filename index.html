@@ -23,16 +23,22 @@
   <body>
     <!-- Content of your website or application -->
     <div class="container">
-	<div class="row">
-	    <div class="col-8">
-		<h1>Encrypt your email address</h1>
-		<p>E-mail scraping sucks. Encrypt your email address with this form and just ask your friends
-		to paste the generated command into their terminal emulator to reveal your address.</p>
-		<form onsubmit="return false"><i class="fa fa-envelope-o" id="envelope" aria-hidden="true"></i> <input type="email" placeholder="Your email address" id="email">
-		<input type="submit" id="generate" value="Generate"></input></form>
-		<div id="command"></div>
-	    </div>
-	</div>
+      <div class="row">
+        <div class="col-8">
+          <h1>Encrypt your email address</h1>
+          <p>
+            E-mail scraping sucks. Encrypt your email address with this form and
+            just ask your friends to paste the generated command into their
+            terminal emulator to reveal your address.
+          </p>
+          <form onsubmit="return false">
+            <i class="fa fa-envelope-o" id="envelope" aria-hidden="true"></i>
+            <input type="email" placeholder="Your email address" id="email" />
+            <input type="submit" id="generate" value="Generate" />
+          </form>
+          <div id="command"></div>
+        </div>
+      </div>
     </div>
     <!-- Bundled JavaScript file -->
     <script src="assets/js/script.js"></script>
