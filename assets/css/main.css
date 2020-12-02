@@ -1,0 +1,47 @@
+#email,
+#generate {
+  display: inline-block;
+  padding: 7px 8px;
+  font-size: 1.125rem;
+}
+
+#email {
+  width: 50%;
+  margin-left: 5px;
+  border: 1px solid black;
+}
+
+#email::placeholder {
+  font-size: 1.125rem;
+  padding: 0 5px;
+}
+
+#envelope {
+  vertical-align: middle;
+}
+
+#generate {
+  color: white;
+  display: inline-block;
+  background-color: black;
+  margin: 0;
+}
+
+#generate:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1.125rem;
+  box-sizing: border-box;
+  border: 1px solid #777;
+  color: black;
+  background-color: #eeeeee;
+  display: block;
+  padding: 15px;
+  white-space: pre-wrap;
+}
