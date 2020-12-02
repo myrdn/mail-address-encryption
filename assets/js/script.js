@@ -36,7 +36,12 @@ function getEmailAndGenerate(){
     let charsDecoded = sub.decode(shuffledCharacters);
 
     //Build our command
-    document.getElementById('command').innerHTML = "<p> <i class='fa fa-terminal' aria-hidden='true'></i> " +  "This is the command you can share :" +  "</p>"  + "<code>" + `echo '${mailEncoded}' | sed 'y/${shuffledCharacters}/${charsDecoded}/'` + "</code>";
+    let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(inputText.value.match(mailformat)){
+	document.getElementById('command').innerHTML = "<p> <i class='fa fa-terminal' aria-hidden='true'></i> " +  "This is the command you can share :" +  "</p>"  + "<code>" + `echo '${mailEncoded}' | sed 'y/${shuffledCharacters}/${charsDecoded}/'` + "</code>";
+    } else {
+	document.getElementById('command').innerHTML = "<p>" + "Please enter valid email address." + "</p>";
+    }
 }
 
 let generateButton = document.getElementById('generate');
