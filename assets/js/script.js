@@ -52,7 +52,6 @@ function getEmailAndGenerate() {
   let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (mailAddress.match(mailformat)) {
     document.getElementById("command").innerHTML =
-      "<p> <i class='fa fa-terminal' aria-hidden='true'></i> " +
       "This is the command you can share :" +
       "</p>" +
       "<code>" +
